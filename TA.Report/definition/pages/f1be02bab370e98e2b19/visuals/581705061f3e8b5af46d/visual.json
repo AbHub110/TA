@@ -1,0 +1,144 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.14.0/schema.json",
+  "name": "581705061f3e8b5af46d",
+  "position": {
+    "x": 1798.3389011923978,
+    "y": 405.01382580733963,
+    "z": 21000,
+    "height": 275.17685772556086,
+    "width": 579.42169337987821,
+    "tabOrder": 21000
+  },
+  "visual": {
+    "visualType": "treemap",
+    "query": {
+      "queryState": {
+        "Group": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "WA_Fn-UseC_-HR-Employee-Attrition"
+                    }
+                  },
+                  "Property": "PercentSalaryHike"
+                }
+              },
+              "queryRef": "WA_Fn-UseC_-HR-Employee-Attrition.PercentSalaryHike",
+              "nativeQueryRef": "PercentSalaryHike",
+              "active": true
+            }
+          ]
+        },
+        "Values": {
+          "projections": [
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "WA_Fn-UseC_-HR-Employee-Attrition"
+                    }
+                  },
+                  "Property": "Total Bajas"
+                }
+              },
+              "queryRef": "WA_Fn-UseC_-HR-Employee-Attrition.Total Bajas",
+              "nativeQueryRef": "Total Bajas"
+            }
+          ]
+        }
+      },
+      "sortDefinition": {
+        "sort": [
+          {
+            "field": {
+              "Measure": {
+                "Expression": {
+                  "SourceRef": {
+                    "Entity": "WA_Fn-UseC_-HR-Employee-Attrition"
+                  }
+                },
+                "Property": "Total Bajas"
+              }
+            },
+            "direction": "Descending"
+          }
+        ],
+        "isDefaultSort": true
+      }
+    },
+    "objects": {
+      "labels": [
+        {
+          "properties": {
+            "fontSize": {
+              "expr": {
+                "Literal": {
+                  "Value": "11D"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "legend": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    "visualContainerObjects": {
+      "title": [
+        {
+          "properties": {
+            "text": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Porcentaje de rotación por Aumento Salarial'"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "subTitle": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "dropShadow": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    "drillFilterOtherVisuals": true
+  }
+}
